@@ -9,7 +9,7 @@ Recipe for running Meilisearch in Zerops Linux container.
 #yamlPreprocessor=on
 services:
   - hostname: meilisearch
-    type: ubuntu@22.04
+    type: go@1
     enableSubdomainAccess: true
     buildFromGit: https://github.com/zeropsio/recipe-meilisearch
     envSecrets:
