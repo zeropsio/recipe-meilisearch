@@ -11,7 +11,7 @@ services:
   - hostname: meilisearch
     type: go@1
     enableSubdomainAccess: true
-    buildFromGit: https://github.com/zeropsio/recipe-meilisearch
+    buildFromGit: https://github.com/zeropsio/recipe-meilisearch@main
     envSecrets:
       MEILI_MASTER_KEY: <@generateRandomString(<16>)>
 ```
