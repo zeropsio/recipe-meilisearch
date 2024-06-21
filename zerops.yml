@@ -15,7 +15,7 @@ zerops:
       envVariables:
         MEILI_HTTP_ADDR: "[::]:7700"
       start: ./meilisearch
-      healthCheck:
-        httpGet:
-          port: 7700
-          path: /health
+      # healthCheck:
+      #   httpGet:
+      #     port: 7700
+      #     path: /health
