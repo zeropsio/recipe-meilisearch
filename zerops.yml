@@ -7,7 +7,7 @@ zerops:
        - meilisearch
     run:
       os: ubuntu
-      base: ubuntu@22.04
+      base: go@1
       ports:
         - protocol: tcp
           port: 7700
