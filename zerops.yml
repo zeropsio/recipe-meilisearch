@@ -1,0 +1,21 @@
+zerops:
+  - setup: meilisearch
+    build:
+      buildCommands:
+        - curl -L https://install.meilisearch.com | sh
+      deployFiles:
+       - meilisearch
+    run:
+      os: ubuntu
+      base: ubuntu@22.04
+      ports:
+        - protocol: tcp
+          port: 7700
+          httpSupport: true
+      envVariables:
+        MEILI_HTTP_ADDR: "[::]:7700"
+      start: ./meilisearch
+      healthCheck:
+        httpGet:
+          port: 7700
+          path: /health

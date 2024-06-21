@@ -1,0 +1,8 @@
+#yamlPreprocessor=on
+services:
+  - hostname: meilisearch
+    type: ubuntu@22.04
+    enableSubdomainAccess: true
+    buildFromGit: https://github.com/zeropsio/recipe-meilisearch
+    envSecrets:
+      MEILI_MASTER_KEY: <@generateRandomString(<16>)>
