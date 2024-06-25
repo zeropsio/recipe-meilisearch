@@ -1,7 +1,7 @@
 # Zerops x Meilisearch
 Recipe for running Meilisearch in Zerops Linux container.
 
-![Meilisearch](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/cover-meilisearch.png)
+![Meilisearch](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-meillisearch.svg)
 
 
 > [!WARNING]
